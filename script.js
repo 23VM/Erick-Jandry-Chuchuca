@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         { 
             name: "Jandry Davila", 
-            photo: "foto_jandry.jpg", 
+            photo: "IMG-20260913-WA0073.jpg", 
             qr: "qr_jandry.png"       
         }
     ];
