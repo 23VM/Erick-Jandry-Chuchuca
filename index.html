@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Deportivo - Hoja de Vida</title>
+    <!-- Fuentes masculinas y tecnológicas -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Fondo oscuro tecnológico -->
+    <div class="cyber-glow glow-1"></div>
+    <div class="cyber-glow glow-2"></div>
+    <div id="particles-js"></div>
+
+    <main class="main-container">
+        
+ <!-- ================= CARÁTULA MASCULINA (NUEVO ORDEN) ================= -->
+        <section id="section-caratula" class="page-section active-page">
+            <div class="hero-wrapper">
+                
+                <div class="top-badge cyber-pulse">PROYECTO WEB 2026 </div>
+                <h1 class="power-title">Hoja de Vida</h1>
+
+                <!-- Tarjeta Central tipo Dashboard -->
+                <div class="dashboard-card">
+                    <div class="dash-header">
+                        <h2 class="school-title">Unidad Educativa Carmen Mora de Encalada</h2>
+                        <div class="dash-logo-box">
+                            <img src="logo_carmen_mora.jpg" alt="Logo" class="hero-logo">
+                        </div>
+                    </div>
+
+                    <div class="dash-info-grid">
+                        <div class="info-badge-box">
+                            <i class="fas fa-terminal"></i>
+                            <span>2do Informática "B"</span>
+                        </div>
+                        <div class="info-badge-box">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Lic. Patricio Medina</span>
+                        </div>
+                    </div>
+
+                    <div class="dash-team-box">
+                        <i class="fas fa-users"></i>
+                        <p>ESCUADRÓN CREATIVO: Erick Sanmartin • Snnider Chuchuca • Jandry Davila</p>
+                    </div>
+                </div>
+
+                <p class="hero-subtitle">Conoce los perfiles profesionales de nuestro escuadrón de desarrolladores en esta experiencia interactiva.</p>
+                
+                <button id="btn-comenzar" class="action-btn">
+                    Siguiente pagina <i class="fas fa-futbol"></i>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- ================= PERFILES ================= -->
+        <section id="section-detalles" class="page-section hidden-page">
+            
+            <div class="header-details">
+                <button id="btn-volver" class="cyber-back-btn"><i class="fas fa-angle-double-left"></i> REGRESAR</button>
+                <h2 class="section-title">EQUIPO DE DESARROLLO</h2>
+            </div>
+
+            <!-- Botones de los Jugadores -->
+            <div class="player-selectors">
+                <button class="player-btn active-player" data-index="0"><i class="fas fa-futbol"></i> Erick</button>
+                <button class="player-btn" data-index="1"><i class="fas fa-futbol"></i> Snnider</button>
+                <button class="player-btn" data-index="2"><i class="fas fa-futbol"></i> Jandry</button>
+            </div>
+
+            <div class="pitch-container">
+                
+                <!-- TARJETA LIMPIA (Sin estilo de juego de fútbol, solo la animación de patada) -->
+                <div id="player-card" class="player-card">
+                    
+                    <div class="card-images">
+                        <div class="img-box">
+                            <img id="card-photo" src="foto_erick.jpg" class="zoom-trigger profile-img" data-caption="Perfil: Erick Samartín">
+                            <div class="glitch-label">FOTO</div>
+                        </div>
+                        <div class="img-box">
+                            <img id="card-qr" src="qr_erick.png" class="zoom-trigger qr-img" data-caption="Escanea el QR">
+                            <div class="glitch-label">CÓDIGO QR</div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <h3 id="card-name" class="player-name">Erick Samartín</h3>
+                        <p class="player-role">Programador Web</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-section">
+                <p class="watermark">© 2026 PROYECTO ACADÉMICO | MODO OSCURO ACTIVADO</p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- MODAL DE ZOOM -->
+    <div id="image-modal" class="modal hidden">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="imagen-ampliada">
+        <div id="caption">Visualización</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
