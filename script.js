@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const players = [
         { 
             name: "Erick Samartín", 
-            photo: "foto_erick.jpg",   
+            photo: "IMG-20260913-WA0071.jpg",   
             qr: "qr_erick.png"         
         },
         { 
             name: "Snnider Chuchuca", 
-            photo: "foto_snnider.jpg",   
+            photo: "IMG-20260913-WA0072.jpg",   
             qr: "qr_snnider.png"         
         },
         { 
